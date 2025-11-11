@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Small safe fallbacks if Tailwind didn't load momentarily */
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-background font-sans text-textPrimary;
+  margin: 0;
+  padding: 0;
+}
+
+/* helper */
+.shadow-soft {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
